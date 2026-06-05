@@ -1,0 +1,100 @@
+# ─── Project-private ───────────────────────────────────────────────────────────
+private/
+
+# ─── Secrets & credentials (never commit) ────────────────────────────────────
+.env
+.env.*
+!.env.example
+credentials.json
+kaggle.json
+**/access_token
+
+# ─── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+build/
+dist/
+wheels/
+share/python-wheels/
+*.manifest
+*.spec
+
+# ─── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ─── Test & lint caches ────────────────────────────────────────────────────────
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# ─── Type checkers / package managers ──────────────────────────────────────────
+.dmypy.json
+dmypy.json
+.python-version   # local pin; omit if you want to share via pyenv
+uv.lock           # omit if you adopt uv and want a committed lockfile
+
+# ─── Jupyter & notebooks ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ─── IDE & editors ─────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# ─── OS junk ───────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ─── Kaggle competition artifacts ──────────────────────────────────────────────
+.kaggle/
+orbit-wars-data/
+competition-data/
+replays/
+logs/
+episodes/
+submission.tar.gz
+phase*.tar.gz
+*.tar.gz
+
+# ─── Local model weights & large binaries ──────────────────────────────────────
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+*.h5
+*.weights
+
+# ─── Logs & profiling ──────────────────────────────────────────────────────────
+*.log
+*.prof
+*.lprof
