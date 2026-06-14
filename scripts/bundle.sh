@@ -13,6 +13,7 @@ case "$PHASE" in
   phase5) FILES=(main.py geometry.py simulation.py agent.py allocator.py) ;;
   phase6) FILES=(main.py geometry.py simulation.py agent.py allocator.py) ;;
   phase7) FILES=(main.py geometry.py simulation.py agent.py) ;;
+  phase8) FILES=(main.py geometry.py simulation.py agent.py) ;;
   phase3-agg)
     PHASE_DIR="phase3"
     BUILD_DIR="$(mktemp -d)"
@@ -25,7 +26,7 @@ case "$PHASE" in
     exit 0
     ;;
   *)
-    echo "Unknown phase: $PHASE (use phase0–phase7, phase3-agg)"
+    echo "Unknown phase: $PHASE (use phase0–phase8, phase3-agg)"
     exit 1
     ;;
 esac

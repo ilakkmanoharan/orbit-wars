@@ -8,17 +8,16 @@ Phase 2 scores **μ 600**. Phases 3–6 regressed to 346–427 by adding complex
 
 Fork Phase 2 exactly. Apply **one mechanical fix per variant**. Never change the eval function or add meta-layers.
 
-## Phase 7a (current): Target Deduplication
+**Phase 7a:** Target deduplication only — **ladder result μ 423.1 (failed)**.
 
-Combat tie rule: equal attackers → all ships destroyed. Phase 2 may launch multiple fleets at the same target in one turn, wasting ships.
+See `private/phase-analysis.md`. Phase 8 supersedes 7b with comet paths + static boost.
 
-**Single change:** track `claimed_targets` in move builder; at most one fleet per target per turn.
-
-Everything else identical to phase 2:
+Phase 7a was identical to phase 2 except:
 - 6-policy sim picker
 - Eval: `prod×10 + ships + owned×5`
 - Target scoring: `production / (eta + 1)`
 - Sim depth: 12
+- **Added:** `claimed_targets` deduplication (hurt score)
 
 ## Roadmap
 
