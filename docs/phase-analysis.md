@@ -10,6 +10,7 @@ Full roadmap: `private/phase8-plan.md` (local)
 | Phase | μ Score | vs Phase 2 |
 |---|---|---|
 | **2 v1** | **600.0** | baseline |
+| **8** | **559.2** | −7% (scoring boosts hurt opening) |
 | 0 baseline | 479.2 | −20% |
 | 1 v1 | 477.6 | −20% |
 | 6 v2 | 468.3 | −22% |
@@ -43,12 +44,10 @@ Full roadmap: `private/phase8-plan.md` (local)
 
 **Target deduplication (7a → 423) proves Phase 2's multi-fleet launches are a feature, not a bug.** Aggressive deployment beats tie-combat waste avoidance.
 
-## Phase 8 Strategy
+## Phase 8 Strategy (μ 559 — second best, below phase 2)
 
-Literal Phase 2 + **scoring/geometry only** (no dedup, no meta):
+Added comet paths + static boost + 2.0× pre-spawn comet scoring. Scoring changes hurt opening neutral expansion.
 
-1. Comet path ETA via `obs["comets"].paths`
-2. Static planet value boost (1.25×)
-3. Comet pre-spawn window boost (2.0× within 10 steps of spawn)
+## Phase 9 Strategy
 
-See `phase8/paper.md` for implementation details.
+Phase 2 scoring + guarded comet paths only. See `phase9/paper.md`.
